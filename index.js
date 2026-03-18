@@ -4,7 +4,8 @@ const fetch = require(“node-fetch”);
 
 const app = express();
 
-app.use(cors({ origin: “*”, methods: [“GET”, “POST”, “PUT”, “DELETE”] }));
+app.use(cors({ origin: "*", methods: ["GET","POST","PUT","DELETE"] }));
+
 app.use(express.json());
 
 const TRELLO = “https://api.trello.com/1”;
